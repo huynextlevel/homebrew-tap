@@ -5,21 +5,21 @@
 class Clawkit < Formula
   desc "Unified CLI for OpenClaw, PicoClaw, ZeroClaw"
   homepage "https://github.com/huynextlevel/clawkit"
-  version "0.2.8"
+  version "0.2.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/huynextlevel/clawkit/releases/download/v0.2.8/clawkit_0.2.8_darwin_amd64.tar.gz"
-      sha256 "44dffe4f12f1822e09e65b489b711d3a34e70a6add6a04b687ae9e0449c05bda"
+      url "https://github.com/huynextlevel/clawkit/releases/download/v0.2.9/clawkit_0.2.9_darwin_amd64.tar.gz"
+      sha256 "32d1d70ee86a8667f4e036c4472b1c29c76ff301ca4c49d6d20409764bd4d57e"
 
       def install
         bin.install "clawkit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/huynextlevel/clawkit/releases/download/v0.2.8/clawkit_0.2.8_darwin_arm64.tar.gz"
-      sha256 "736ee8021131e48792f5d90814b213c93919adfae8928717d27cf305f0635965"
+      url "https://github.com/huynextlevel/clawkit/releases/download/v0.2.9/clawkit_0.2.9_darwin_arm64.tar.gz"
+      sha256 "8ee50c8b0395f3e908c3109fbacdf086c1b437743833620599d8d2fe29299955"
 
       def install
         bin.install "clawkit"
@@ -29,15 +29,15 @@ class Clawkit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/huynextlevel/clawkit/releases/download/v0.2.8/clawkit_0.2.8_linux_amd64.tar.gz"
-      sha256 "2413cb87a143960ad3342ab66cde46e693d75e94cc0ed2a7f5302d7d5b2e91bb"
+      url "https://github.com/huynextlevel/clawkit/releases/download/v0.2.9/clawkit_0.2.9_linux_amd64.tar.gz"
+      sha256 "ffbaf8cb5cc88765fa5adc5ae88b8452323201fa5c8809d6ed81bd9e147f8a51"
       def install
         bin.install "clawkit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/huynextlevel/clawkit/releases/download/v0.2.8/clawkit_0.2.8_linux_arm64.tar.gz"
-      sha256 "7a7dd350c841631f256e4ecd1231dba6eaacdabe0c8ebe7af1e8aeeaf7fe2d39"
+      url "https://github.com/huynextlevel/clawkit/releases/download/v0.2.9/clawkit_0.2.9_linux_arm64.tar.gz"
+      sha256 "93ab7dcd88cc1fcf2c8a2e0c488b52be05df6fadc55c9a66ddbb8ffa83d8c40b"
       def install
         bin.install "clawkit"
       end
